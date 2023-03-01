@@ -1,13 +1,14 @@
 import Video from "./component/Video";
 function App() {
-  let cls='blue'
-  let name='Benjamin'
+ 
+
   return (
-    <div className={cls}>
-      {name}
-      <Video body="React" title="learning" col="blue"></Video>
-      <Video body="Node" title="learned" col="green"></Video>
-      <Video body="Aws" title="to be learned" col="red"></Video>
+    <div>
+      
+      <Video  title="learning" channel="blue" views='100'></Video>
+      <Video  title="learned" channel="blue" views='1020'> </Video>
+      <Video  title="to be learned" channel="blue" views='140'></Video>
+     
     </div>
   );
 }

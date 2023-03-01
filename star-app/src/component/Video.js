@@ -1,10 +1,13 @@
-import './Videos.css'
-function Video({body,title,col}){
-    //let cls='blue'
-return (
-<div style={{backgroundColor:col}}> 
-<img src="https://loremflickr.com/160/90" alt="cat" />
-{body} {title} </div>
-);
+import "./Videos.css";
+function Video({ title, channel, views }) {
+  return (
+    <div className="container">
+      <div className="title">{ title }</div>
+      <div className="channel">{ channel }</div>
+      <div className="views">{views }</div>
+
+      <img src="https://loremflickr.com/160/90" alt="cat" />
+    </div>
+  );
 }
 export default Video;

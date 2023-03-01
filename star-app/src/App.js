@@ -1,34 +1,14 @@
-
-import './App.css';
-
+import Video from "./component/Video";
 function App() {
-  let name="Benjamin here"
-  let clas="App-header"
-  console.log('working')
+  let cls='blue'
+  let name='Benjamin'
   return (
-    
-    <div className="App">
-      
-      Hii there
-      
-      <div className={clas}>
+    <div className={cls}>
       {name}
-      <Child></Child>
-      </div>
-     
+      <Video body="React" title="learning" col="blue"></Video>
+      <Video body="Node" title="learned" col="green"></Video>
+      <Video body="Aws" title="to be learned" col="red"></Video>
     </div>
   );
 }
-function Child() {
-  return (
-    <div className="App">
-      this is child
-      <div className='App-header'>
-      Benjamin jr here!
-      </div>
-     
-    </div>
-  );
-}
-
 export default App;
